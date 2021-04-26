@@ -1,0 +1,255 @@
+.node-item {
+    background-color: #3f51b5;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.node-pointer {
+    margin-left: 10px;
+}
+
+.fx-row-cc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #3f51b5;
+}
+
+.arrow-right {
+    border: solid #3f51b5;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: -6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.add-node button, .delete-node button {
+    margin-top: -21px;
+}
+
+
+
+
+
+/* Slide Menu */
+
+@keyframes slideMenuOn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideMenuOff {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Increase Opacity to highlight menu */
+
+@keyframes decreaseOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes increaseOpacity {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ----------------------------------------------------------------- */
+/* Node */
+/* ----------------------------------------------------------------- */
+
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes highlightNode {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes deleteNode {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes moveLeftNode{
+    0%{
+        transform: translateX(200%);
+    }
+    70%{
+        transform: translateX(250%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveRightNode{
+    50%{
+        transform: translateX(250%);
+    }
+    100%{
+        transform: translateX(200%);
+
+    }
+}
+
+/* ----------------------------------------------------------------- */
+/* Number */
+/* ----------------------------------------------------------------- */
+
+
+@keyframes fadeNumberOut {
+    70% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes fadeNumberIn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+/* Pointer */
+/* ----------------------------------------------------------------- */
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes highlightPointer {
+    33% {
+        transform: rotate(10deg);
+    }
+    66% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes deletePointer {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+/* Remove Button */
+/* ----------------------------------------------------------------- */
+
+
+@keyframes removeAnimationOn {
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes removeAnimationOff {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+@keyframes toggleMenuDown {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes toggleMenuDown200 {
+    0% {
+        transform: translate(0, -200%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes toggleMenuUp {
+    100% {
+        transform: translate(0, -100%);
+    }
+}
+
+@keyframes toggleMenuUp200 {
+    100% {
+        transform: translate(0, -200%);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+/* Errors */
+/* ----------------------------------------------------------------- */
